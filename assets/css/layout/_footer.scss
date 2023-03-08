@@ -1,6 +1,24 @@
 .footer-section {
   margin: 40px 0 0;
   padding: 60px 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url("../img/blackhorse.png");
+  z-index: 1;
+  @include after("") {
+    width: 500px;
+    aspect-ratio: 1;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(202, 175, 103, 0.2) 21.87%,
+      rgba(202, 175, 103, 0.02) 100%
+    );
+    z-index: -1;
+    filter: blur(160px);
+    right: 20%;
+    top: 0;
+  }
   .prag {
     font-size: 14px;
     padding: 24px 0;
