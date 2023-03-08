@@ -1,0 +1,44 @@
+.button-link {
+  &.border-button {
+    a {
+      border: 1px solid $color-gold;
+      color: $color-gold;
+      background-color: transparent;
+      @include hover(0.2) {
+        background-color: $color-gold;
+        color: $color-white;
+      }
+    }
+  }
+  a {
+    border: 1px solid $color-gold;
+    color: $color-gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 60px;
+    width: fit-content;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: $color-gold;
+    color: $color-white;
+    @include hover(0.2) {
+      background-color: transparent;
+    }
+  }
+}
+
+.arrow-button {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 400;
+  color: $color-gold;
+  .text {
+    padding: 0 12px;
+  }
+  @include hover(0.2) {
+    color: $color-white;
+  }
+}

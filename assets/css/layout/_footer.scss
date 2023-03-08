@@ -1,0 +1,101 @@
+.footer-section {
+  margin: 40px 0 0;
+  padding: 60px 0 0;
+  .prag {
+    font-size: 14px;
+    padding: 24px 0;
+    max-width: 80%;
+  }
+  .newslettersform {
+    form {
+      display: flex;
+      border: 1px solid $color-gold;
+      border-radius: 4px;
+      input {
+        width: 100%;
+        padding: 12px;
+        border: 0;
+        color: $color-white;
+        background-color: rgba($color-gray, 0.4);
+        &:focus {
+          box-shadow: unset;
+          outline: transparent;
+        }
+      }
+      button {
+        background-color: rgba($color-black, 1);
+        border: 0;
+        color: rgba($color-white, 1);
+        padding: 12px 24px;
+        @include dir(ltr) {
+          border-left: 1px solid $color-gold;
+        }
+        @include dir(rtl) {
+          border-right: 1px solid $color-gold;
+        }
+        @include hover(0.2) {
+          color: rgba($color-black, 1);
+          background-color: rgba($color-gold, 1);
+        }
+      }
+    }
+  }
+
+  .copy-right {
+    margin: 20px 0 0;
+    padding: 20px 0;
+    border-top: 1px solid rgba($color-gray, 1);
+    .prag {
+      max-width: 100%;
+      a {
+        text-decoration: underline;
+        color: rgba($color-gold, 1);
+      }
+    }
+  }
+}
+.footer-list {
+  ul {
+    li {
+      padding-bottom: 24px;
+      &:last-of-type {
+        padding: 0;
+      }
+      .title {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba($color-gray, 0.5);
+      }
+      a {
+        color: $color-gray;
+        font-size: 18px;
+        font-weight: 400;
+        @include hover(0.2) {
+          color: rgba($color-white, 1);
+        }
+      }
+    }
+  }
+}
+
+.social-list {
+  ul {
+    display: flex;
+    li {
+      @include dir(ltr) {
+        padding-right: 12px;
+      }
+      @include dir(rtl) {
+        padding-left: 12px;
+      }
+      a {
+        color: $color-gray;
+        font-size: 30px;
+        font-weight: 400;
+        @include hover(0.2) {
+          color: rgba($color-white, 1);
+        }
+      }
+    }
+  }
+}
