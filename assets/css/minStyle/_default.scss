@@ -26,6 +26,22 @@ body {
   padding: 0;
   background-color: $color-black;
   counter-reset: timelineCounter;
+  z-index: 1;
+  overflow-x: hidden;
+  &.form-page {
+    @include after("") {
+      opacity: 0.1;
+      z-index: -1;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right top;
+      background-image: url("../img/hourseIcon.png");
+      top: -100px;
+      right: -100px;
+      width: 693.35px;
+      aspect-ratio: 1;
+    }
+  }
   // @include dir(rtl) {
   // }
   @include dir(ltr) {

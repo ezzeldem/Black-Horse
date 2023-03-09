@@ -27,6 +27,25 @@ body {
   padding: 0;
   background-color: #000;
   counter-reset: timelineCounter;
+  z-index: 1;
+  overflow-x: hidden;
+}
+body.form-page {
+  position: relative;
+}
+body.form-page:after {
+  position: absolute;
+  content: "";
+  opacity: 0.1;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right top;
+  background-image: url("../img/hourseIcon.png");
+  top: -100px;
+  right: -100px;
+  width: 693.35px;
+  aspect-ratio: 1;
 }
 html[dir=ltr] body {
   font-family: "Inter", sans-serif;
@@ -518,12 +537,14 @@ html[dir=ltr] .timeline-section .timeline-container-box .timeline-box:nth-of-typ
     font-size: 14px;
   }
 }
+.button-link.border-button button,
 .button-link.border-button a {
   border: 1px solid #caaf67;
   color: #caaf67;
   background-color: transparent;
   transition: 0.2s all ease-in-out;
 }
+.button-link.border-button button:hover,
 .button-link.border-button a:hover {
   background-color: #caaf67;
   color: #fff;
@@ -565,11 +586,13 @@ html[dir=ltr] .timeline-section .timeline-container-box .timeline-box:nth-of-typ
 }
 
 @media (max-width: 1200px) {
+  .button-link button,
   .button-link a {
     padding: 10px 40px;
   }
 }
 @media (max-width: 772px) {
+  .button-link button,
   .button-link a {
     font-size: 13px;
     padding: 5px 20px;
@@ -710,6 +733,10 @@ html[dir=rtl] .section-content.left-section:before {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
+.jop-box.applay-jop {
+  border-color: rgba(153, 153, 153, 0.1);
+  background-color: rgba(153, 153, 153, 0.1);
+}
 .jop-box .icon-box {
   aspect-ratio: 1;
   width: 50px;
@@ -813,6 +840,38 @@ html[dir=ltr] .jop-box .tags-list-box ul li {
     max-width: 100%;
   }
 }
+.form-box {
+  padding: 30px;
+  border: 1px solid rgba(202, 175, 103, 0.1);
+  background-color: rgba(202, 175, 103, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.form-box .title {
+  font-weight: 600;
+  font-size: 24px;
+  color: #caaf67;
+  padding-bottom: 30px;
+}
+.form-box .form-group input,
+.form-box .form-group textarea {
+  border: 1px solid rgba(202, 175, 103, 0.3);
+  background-color: rgba(202, 175, 103, 0.1);
+  padding: 12px;
+  width: 100%;
+  border-radius: 5px;
+  color: white;
+}
+.form-box .form-group input:focus,
+.form-box .form-group textarea:focus {
+  outline: transparent;
+  box-shadow: 0;
+}
+.form-box .button-link button {
+  padding: 10px;
+  width: 100%;
+}
+
 .header-section .right-box .menu-icon i {
   transition: 0.2s all ease-in-out;
 }

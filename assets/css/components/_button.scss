@@ -1,5 +1,6 @@
 .button-link {
   &.border-button {
+    button,
     a {
       border: 1px solid $color-gold;
       color: $color-gold;
@@ -45,6 +46,7 @@
 
 @include media(1200) {
   .button-link {
+    button,
     a {
       padding: 10px 40px;
     }
@@ -52,6 +54,7 @@
 }
 @include media(772) {
   .button-link {
+    button,
     a {
       font-size: 13px;
       padding: 5px 20px;

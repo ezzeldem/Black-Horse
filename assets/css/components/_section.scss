@@ -127,6 +127,10 @@
   border: 1px solid $color-gold;
   background-color: rgba($color-gold, 0.1);
   backdrop-filter: blur(10px);
+  &.applay-jop {
+    border-color: rgba($color-gray, 0.1);
+    background-color: rgba($color-gray, 0.1);
+  }
   .icon-box {
     aspect-ratio: 1;
     width: 50px;
