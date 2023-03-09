@@ -15,7 +15,7 @@ $(document).ready(function () {
     $("body").css("overflow-y", "hidden");
   });
 
-  $(".offer-slider").slick({
+  $(".offer-home-slider").slick({
     arrows: false,
     slidesToShow: 4,
     rtl: dir_lang,
@@ -27,16 +27,35 @@ $(document).ready(function () {
         settings: {
           centerMode: true,
           centerPadding: "20px",
-          slidesToShow: 3,
+          slidesToShow: 2,
         },
       },
       {
         breakpoint: 772,
         settings: {
-          centerMode: true,
-          centerPadding: "20px",
           slidesToShow: 1,
         },
+      },
+    ],
+  });
+  $(".about-slider").slick({
+    arrows: false,
+    slidesToShow: 3,
+    rtl: dir_lang,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    centerMode: true,
+    centerPadding: "0px",
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 772,
+        settings: { centerPadding: "30px", slidesToShow: 1 },
       },
     ],
   });

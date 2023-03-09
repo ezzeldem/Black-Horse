@@ -42,3 +42,19 @@
     color: $color-white;
   }
 }
+
+@include media(1200) {
+  .button-link {
+    a {
+      padding: 10px 40px;
+    }
+  }
+}
+@include media(772) {
+  .button-link {
+    a {
+      font-size: 13px;
+      padding: 5px 20px;
+    }
+  }
+}

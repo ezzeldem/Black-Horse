@@ -3,3 +3,43 @@
   font-size: 24px;
   color: $color-gray;
 }
+
+@include media(1200) {
+  .prag {
+    font-size: 20px;
+  }
+}
+@include media(772) {
+  .prag {
+    font-size: 15px;
+  }
+}
+
+.gold-section-title {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #d7a31e46 21.87%,
+    rgba(202, 175, 103, 0) 100%
+  );
+  position: relative;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .title {
+    font-weight: 700;
+    font-size: 64px;
+    color: $color-gold;
+    max-width: 40%;
+  }
+}
+
+@include media(772) {
+  .gold-section-title {
+    height: 200px !important;
+    .title {
+      text-align: center;
+      max-width: 100%;
+    }
+  }
+}

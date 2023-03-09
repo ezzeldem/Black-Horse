@@ -4,45 +4,45 @@
     z-index: 99;
     position: relative;
   }
-  .offer-slider-box {
-    background: radial-gradient(
-      50% 50% at 50% 50%,
-      #d7a31e6b 21.87%,
-      rgba(202, 175, 103, 0) 100%
-    );
-    @include after {
-      width: 100%;
-      height: 185px;
-      border-radius: 59%;
-      background-color: $color-black;
-      left: 0;
-      top: -92px;
-    }
-    @include before {
-      width: 100%;
-      height: 185px;
-      border-radius: 59%;
-      background-color: $color-black;
-      left: 0;
-      bottom: -92px;
-      z-index: 99;
-    }
-    .offer-slider {
-      .offer-slider-item {
-        padding: 120px 20px;
-        background-color: $color-gray-dark;
-        margin: 0 10px;
-        .title {
-          font-size: 20px;
-          color: $color-white;
-        }
-        .arrow-button {
-          margin: 12px 0;
-        }
-        .prag {
-          margin: 0 0 20px 0;
-          font-size: 24px;
-        }
+}
+
+.min-slider-box {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #d7a31e6b 21.87%,
+    rgba(202, 175, 103, 0) 100%
+  );
+  @include after {
+    width: 100%;
+    height: 185px;
+    border-radius: 59%;
+    background-color: $color-black;
+    left: 0;
+    top: -92px;
+  }
+  @include before {
+    width: 100%;
+    height: 185px;
+    border-radius: 59%;
+    background-color: $color-black;
+    left: 0;
+    bottom: -92px;
+    z-index: 99;
+  }
+  .min-slider {
+    .min-slider-item {
+      padding: 120px 20px;
+      background-color: $color-gray-dark;
+      margin: 0 10px;
+      .title {
+        font-size: 20px;
+        color: $color-white;
+      }
+      .arrow-button {
+        margin: 12px 0;
+      }
+      .prag {
+        margin: 0 0 20px 0;
       }
     }
   }
@@ -135,5 +135,38 @@
     transition: inherit;
     font-size: 40px;
     color: $color-white;
+  }
+  .box-content {
+    text-align: center;
+    padding: 60px 30px;
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+      color: $color-white;
+    }
+    .prag {
+      padding: 20px 0;
+      font-size: 14px;
+      color: $color-white;
+      font-weight: 400;
+      &:last-of-type {
+        padding: 0;
+      }
+    }
+  }
+}
+
+@include media(772) {
+  .timeline-section {
+    .timeline-container-box {
+      .timeline-box {
+        .title {
+          font-size: 14px;
+        }
+        .prag {
+          font-size: 12px;
+        }
+      }
+    }
   }
 }

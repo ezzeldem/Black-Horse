@@ -6,6 +6,11 @@
     justify-content: flex-end;
     .button-link {
       padding: 0 40px;
+      a {
+        i {
+          display: none;
+        }
+      }
     }
     .menu-icon {
       i {
@@ -90,6 +95,57 @@
           padding: 0 0 50px;
           a {
             color: $color-white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media(772) {
+  .header-section {
+    .right-box {
+      .button-link {
+        padding: 0 12px;
+        a {
+          padding: 6px;
+          border: 0;
+          font-size: 20px;
+          i {
+            display: block;
+          }
+          .text {
+            display: none;
+          }
+        }
+      }
+      .menu-icon {
+        i {
+          font-size: 30px;
+        }
+      }
+    }
+    .nav-box-container {
+      padding: 40px 0;
+    }
+    .header-box {
+      .right-box {
+        ul {
+          li {
+            a {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+
+      .nav-list {
+        ul {
+          li {
+            padding: 0 0 20px;
+            a {
+              font-size: 20px;
+            }
           }
         }
       }

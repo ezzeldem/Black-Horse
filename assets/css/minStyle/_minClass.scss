@@ -5,3 +5,9 @@
   z-index: 99;
   display: none;
 }
+
+@include media(992) {
+  .md-order-1 {
+    order: -1;
+  }
+}

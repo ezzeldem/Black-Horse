@@ -117,3 +117,20 @@
     }
   }
 }
+
+@include media(772) {
+  .footer-list {
+    ul {
+      li {
+        a {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .footer-section {
+    .prag {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,8 +1,14 @@
-.container-fluid {
-  padding: 0 40px;
+.section-p-4 {
+  padding-right: 40px;
+  padding-left: 40px;
 }
 .section-padding {
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.remove-padding {
+  padding-left: -50px;
+  padding-right: -50px;
 }
 
 .section-img {
@@ -61,7 +67,7 @@
     }
     top: 82%;
     width: 10px;
-    height: 10px;
+    aspect-ratio: 1;
     border-radius: 10px;
     background-color: $color-gray;
   }
@@ -96,5 +102,104 @@
   }
   .prag {
     padding: 32px 0;
+  }
+}
+
+.section-after {
+  z-index: 1;
+  @include after("") {
+    z-index: -1;
+    width: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    aspect-ratio: 1;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      #d7a31e46 21.87%,
+      rgba(202, 175, 103, 0) 100%
+    );
+  }
+}
+
+.jop-box {
+  padding: 30px;
+  border: 1px solid $color-gold;
+  background-color: rgba($color-gold, 0.1);
+  backdrop-filter: blur(10px);
+  .icon-box {
+    aspect-ratio: 1;
+    width: 50px;
+    border: 1px solid $color-gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .title {
+    padding: 20px 0;
+    font-weight: 600;
+    font-size: 24px;
+    color: $color-gold;
+  }
+  .prag {
+    font-size: 24px;
+  }
+  .tags-list-box {
+    padding: 20px 0;
+    ul {
+      display: flex;
+      li {
+        font-size: 14px;
+        font-weight: 400;
+        border: 1px solid $color-gold;
+        background-color: rgba($color-gold, 0.1);
+        padding: 6px 12px;
+        color: $color-gold;
+        @include dir(rtl) {
+          margin-left: 12px;
+        }
+        @include dir(ltr) {
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+}
+
+@include media(1200) {
+  .section-content {
+    .section-title {
+      font-size: 58px;
+    }
+  }
+}
+
+@include media(772) {
+  // .section-padding {
+  //   padding-top: 12px;
+  //   padding-bottom: 12px;
+  // }
+  .section-content {
+    &:after,
+    &::before {
+      width: 8px;
+    }
+    @include dir(ltr) {
+      padding: 0 18px 0 0;
+    }
+    @include dir(rtl) {
+      padding: 0 0 0 18px;
+    }
+    &.left-section {
+      @include dir(ltr) {
+        padding: 0 0 0 18px;
+      }
+      @include dir(rtl) {
+        padding: 0 18px 0 0;
+      }
+    }
+    .section-title {
+      font-size: 30px !important;
+    }
   }
 }
