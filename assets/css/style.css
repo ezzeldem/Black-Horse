@@ -537,6 +537,57 @@ html[dir=ltr] .timeline-section .timeline-container-box .timeline-box:nth-of-typ
     font-size: 14px;
   }
 }
+.fund-section .fund-box-content {
+  background-color: #2b271e;
+  border: 1px solid rgba(202, 175, 103, 0.3);
+}
+.fund-section .fund-box-content .fund-title-box {
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/Mask group (2).png");
+}
+.fund-section .fund-box-content .fund-title-box .title {
+  font-weight: 700;
+  font-size: 64px;
+  color: #caaf67;
+}
+.fund-section .fund-box-content .fund-box-container {
+  padding: 50px;
+}
+.fund-section .fund-box-content .fund-box-container .fund-box {
+  border: 1px solid #caaf67 !important;
+  background-color: rgba(202, 175, 103, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 20px;
+}
+.fund-section .fund-box-content .fund-box-container .fund-box .title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #caaf67;
+  padding: 14px 0;
+}
+.fund-section .fund-box-content .fund-box-container .fund-box .prag {
+  font-size: 18px;
+}
+
+@media (max-width: 992px) {
+  .fund-section .fund-box-content .fund-title-box {
+    min-height: unset;
+    padding: 50px;
+  }
+}
+@media (max-width: 772px) {
+  .fund-section .fund-box-content .fund-title-box .title {
+    font-size: 26px;
+  }
+}
 .button-link.border-button button,
 .button-link.border-button a {
   border: 1px solid #caaf67;
@@ -726,6 +777,15 @@ html[dir=rtl] .section-content.left-section:before {
   background: radial-gradient(50% 50% at 50% 50%, rgba(215, 163, 30, 0.2745098039) 21.87%, rgba(202, 175, 103, 0) 100%);
 }
 
+.icon-box {
+  aspect-ratio: 1;
+  width: 50px;
+  border: 1px solid #caaf67;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .jop-box {
   padding: 30px;
   border: 1px solid #caaf67;
@@ -736,14 +796,6 @@ html[dir=rtl] .section-content.left-section:before {
 .jop-box.applay-jop {
   border-color: rgba(153, 153, 153, 0.1);
   background-color: rgba(153, 153, 153, 0.1);
-}
-.jop-box .icon-box {
-  aspect-ratio: 1;
-  width: 50px;
-  border: 1px solid #caaf67;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .jop-box .title {
   padding: 20px 0;
@@ -870,6 +922,30 @@ html[dir=ltr] .jop-box .tags-list-box ul li {
 .form-box .button-link button {
   padding: 10px;
   width: 100%;
+}
+
+.accordion-section .accordion-item {
+  border: 1px solid #caaf67 !important;
+  background-color: rgba(202, 175, 103, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.accordion-section .accordion-item .accordion-header .accordion-button {
+  background-color: transparent;
+  color: #caaf67;
+  display: block;
+}
+.accordion-section .accordion-item .accordion-header .accordion-button:focus {
+  box-shadow: unset;
+  border: 0;
+  outline: transparent;
+}
+.accordion-section .accordion-item .accordion-header .accordion-button .name {
+  font-size: 18px;
+  padding-top: 20px;
+}
+.accordion-section .accordion-item .accordion-body {
+  color: white;
 }
 
 .header-section .right-box .menu-icon i {

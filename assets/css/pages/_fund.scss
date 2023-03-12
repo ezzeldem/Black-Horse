@@ -1,0 +1,62 @@
+.fund-section {
+  .fund-box-content {
+    background-color: #2b271e;
+    border: 1px solid rgba($color-gold, 0.3);
+    .fund-title-box {
+      min-height: 100vh;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("../img/Mask group (2).png");
+      .title {
+        font-weight: 700;
+        font-size: 64px;
+        color: rgba($color-gold, 1);
+      }
+    }
+    .fund-box-container {
+      padding: 50px;
+      .fund-box {
+        border: 1px solid $color-gold !important;
+        background-color: rgba($color-gold, 0.1);
+        backdrop-filter: blur(10px);
+        padding: 20px;
+        .title {
+          font-size: 22px;
+          font-weight: 700;
+          color: rgba($color-gold, 1);
+          padding: 14px 0;
+        }
+        .prag {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@include media(992) {
+  .fund-section {
+    .fund-box-content {
+      .fund-title-box {
+        min-height: unset;
+        padding: 50px;
+      }
+    }
+  }
+}
+@include media(772) {
+  .fund-section {
+    .fund-box-content {
+      .fund-title-box {
+        .title {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}

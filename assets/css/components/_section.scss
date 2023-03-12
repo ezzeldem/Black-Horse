@@ -122,6 +122,15 @@
   }
 }
 
+.icon-box {
+  aspect-ratio: 1;
+  width: 50px;
+  border: 1px solid $color-gold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .jop-box {
   padding: 30px;
   border: 1px solid $color-gold;
@@ -131,14 +140,7 @@
     border-color: rgba($color-gray, 0.1);
     background-color: rgba($color-gray, 0.1);
   }
-  .icon-box {
-    aspect-ratio: 1;
-    width: 50px;
-    border: 1px solid $color-gold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+
   .title {
     padding: 20px 0;
     font-weight: 600;

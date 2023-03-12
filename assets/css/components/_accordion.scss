@@ -1,0 +1,26 @@
+.accordion-section {
+  .accordion-item {
+    border: 1px solid $color-gold !important;
+    background-color: rgba($color-gold, 0.1);
+    backdrop-filter: blur(10px);
+    .accordion-header {
+      .accordion-button {
+        background-color: transparent;
+        color: rgba($color-gold, 11);
+        display: block;
+        &:focus {
+          box-shadow: unset;
+          border: 0;
+          outline: transparent;
+        }
+        .name {
+          font-size: 18px;
+          padding-top: 20px;
+        }
+      }
+    }
+    .accordion-body {
+      color: rgba($color-white, 1);
+    }
+  }
+}
